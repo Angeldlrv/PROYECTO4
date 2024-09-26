@@ -1,0 +1,172 @@
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/*Encabezado*/
+header{
+    background-color:#e4860c;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1{
+    flex: 1;
+    text-align: center;
+    margin: 0;
+}
+
+.logo{
+    margin-left: auto;
+}
+
+.logo img{
+    max-width: 100px;
+}
+
+/*Secciones principales*/
+main{
+    margin: 20px 0;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+section h2{
+    color: #e4860c;
+    margin-bottom: 10px;
+}
+
+section p{
+    margin-bottom: 15px;
+}
+
+/* Navegación */
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+/*FORMULARIO*/
+form{
+    background-color: #333;
+    padding: 20px;
+    border: 1PX solid #fff;
+    border-radius: 5px;
+}
+
+form label{
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+form input[type="text"],
+form input[type="Email"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #e4860c;
+    border-radius: 4px;
+}
+
+form button{
+    background-color: #e4860c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+form button:hover{
+    background-color: #555;
+}
+
+/*pie de página*/
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e4860c;
+    color: #fff;
+}
+
+.inicio{
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de personajes */
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: space-between; /* Alinea los personajes de manera uniforme */
+}
+
+.personaje {
+    flex: 1 1 calc(33.333% - 30px); /* Hace que cada tarjeta ocupe un tercio del ancho con espacio entre ellas */
+    text-align: center;
+    border: 1px solid #e4860c;
+    padding: 20px; /* Ajustar el padding para que los personajes quepan mejor */
+    border-radius: 10px;
+    background-color: #333;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.personaje img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.personaje h4 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
